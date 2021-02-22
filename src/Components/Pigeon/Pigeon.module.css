@@ -1,0 +1,54 @@
+div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pigeon {
+    position:relative; top:0; left:0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 80%;
+    height: auto;
+}
+
+.Envelop {
+    position: absolute;
+    transform-origin: center;
+    box-sizing: border-box;
+    top: -4%;
+    left: 11.5%;
+    z-index: 10;
+    max-width: 80%;
+    animation: scale 3000ms ease-in forwards;
+}
+
+.Envelop:hover {
+    cursor: pointer;
+}
+
+.EnvelopContent {
+    position: absolute;
+    z-index: 20;
+}
+
+@media(max-width: 800px) {
+    .Pigeon {
+        max-width: 100%;
+    }
+    .Envelop {
+        top: 1%;
+        left: 12%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .Pigeon {
+        max-width: 100%;
+    }
+    .Envelop {
+        top: 1%;
+        left: 12%;
+    }
+}

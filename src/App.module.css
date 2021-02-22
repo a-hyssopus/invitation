@@ -1,0 +1,40 @@
+.PigeonAndEnvelop {
+    transform-origin: center;
+    animation: scale 7000ms ease-in forwards;
+}
+
+@keyframes scale {
+    0%   {transform:scale(.0.5) ;}
+    5%   {transform:scale(.1);}
+    10%  {transform:scale(.1.5);}
+    15%  {transform:scale(.2);}
+    20%  {transform:scale(.2.5);}
+    25%  {transform:scale(.3);}
+    30%  {transform:scale(.3.5);}
+    35%  {transform:scale(.4);}
+    40%  {transform:scale(.4.5);}
+    45%  {transform:scale(.5);}
+    50%  {transform:scale(.5.5);}
+    55%  {transform:scale(.6);}
+    60%  {transform:scale(.6.5);}
+    65%  {transform:scale(.7);}
+    70%  {transform:scale(.7.5);} 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-image: url("assets/hearts.gif"), url("assets/hearts.gif"), url("assets/flowers.gif");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: right bottom, left top, center;
+}
+
+@media(max-width: 800px) {
+    body {
+        background-image: url("assets/hearts.gif"), url("assets/hearts.gif");
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        background-position: left, right;
+    }
+}
